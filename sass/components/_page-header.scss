@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.page {
+  background-color: $primary-text-color;
+  color: $title-text-color;
+  font-family: "roboto", sans-serif;
+}
+.conteiner {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-section {
+  background-color: $white-color;
+  border-bottom: 2px solid $border-color;
+}
+.main-nav,
+.label-box .contact-information {
+  display: flex;
+}

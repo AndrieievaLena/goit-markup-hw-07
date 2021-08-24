@@ -1,0 +1,60 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.client-content__icon {
+  display: flex;
+  justify-content: center;
+  fill: $logo-company;
+  width: 100px;
+  height: 60px;
+  transition: 250ms $timer-fuction;
+}
+
+.client-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $border-logo-company;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 250ms $timer-fuction;
+}
+.client-content:hover {
+  border: 1px solid $accent-color;
+}
+.client-content:hover .client-content__icon {
+  fill: $accent-color;
+}
+.client-content:focus-within {
+  border: 1px solid $accent-color;
+}
+.client-content:focus-within .client-content__icon {
+  fill: $accent-color;
+}
+.client-content:not(:last-child) {
+  margin-right: 30px;
+}

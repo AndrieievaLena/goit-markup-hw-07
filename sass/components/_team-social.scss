@@ -1,0 +1,33 @@
+.team-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.team-social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms $timer-fuction;
+}
+.team-social__link:hover,
+.team-social__link:focus {
+  background-color: $accent-color;
+}
+.team-social__link:hover svg,
+.team-social__link:focus svg {
+  fill: $white-color;
+}
+.team-social__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: $icon-team;
+}
