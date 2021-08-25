@@ -42,9 +42,7 @@
     height: 60px;
     transition: 250ms $timer-fuction;
   }
-  .client-content:hover {
-    border: 1px solid $accent-color;
-  }
+
   .client-content:hover &__icon {
     fill: $accent-color;
   }
@@ -54,7 +52,10 @@
   .client-content:focus-within &__icon {
     fill: $accent-color;
   }
-  .client-content:not(:last-child) {
-    margin-right: 30px;
-  }
+}
+.client-content:hover {
+  border: 1px solid $accent-color;
+}
+.client-content:not(:last-child) {
+  margin-right: 30px;
 }

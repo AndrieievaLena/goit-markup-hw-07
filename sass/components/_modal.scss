@@ -9,19 +9,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.img-close {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  transform: translate(-50%, -45%);
-  transition: 250ms $timer-fuction;
-}
-.first_btn_modal {
+.btn-modal {
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
   padding: 8px 8px 0px 0px;
 }
+
 .btn-close {
   cursor: pointer;
   height: 30px;
@@ -30,17 +24,25 @@
   border: 1px solid $btn-border_modal;
   background-color: $white-color;
   transition: 2500ms $timer-fuction;
+
+  &__img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    transform: translate(-50%, -45%);
+    transition: 250ms $timer-fuction;
+  }
 }
-.first_btn_modal:hover .img-close {
+.btn-close:focus .btn-close__img {
   fill: $accent-color;
 }
-.btn-close:focus .img-close {
+.btn-modal:hover .btn-close__img {
+  fill: $accent-color;
+}
+.btn-close:focus .btn-close__black {
   fill: $accent-color;
 }
 
-.first_btn_modal:focus .img-close {
-  fill: $accent-color;
-}
 .title_modal {
   margin: 0;
   font-weight: 700;
@@ -56,112 +58,159 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+.modal-name {
+  &__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $second-text-color;
+  }
+  &__title {
+    width: 448px;
+    height: 40px;
+    border: 1px solid $modal-border;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 42px;
+    transition: 250ms $timer-fuction;
+  }
+  &__title:focus ~ .modal-name__icon {
+    fill: $accent-color;
+  }
+  &__title:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+  &__icon {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    justify-content: center;
+    top: 50%;
+    left: 12px;
+    transform: translateY(15%);
+    transition: 250ms $timer-fuction;
+  }
+}
+.modal-tel {
+  &__title {
+    width: 448px;
+    height: 40px;
+    border: 1px solid $modal-border;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 42px;
+    transition: 250ms $timer-fuction;
+  }
+  &__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $second-text-color;
+  }
 
-.name_user_box {
-  width: 448px;
-  height: 40px;
-  border: 1px solid $modal-border;
-  border-radius: 4px;
-  margin-top: 4px;
-  padding-left: 42px;
-  transition: 250ms $timer-fuction;
+  &__icon {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    justify-content: center;
+    top: 50%;
+    left: 12px;
+    transform: translateY(15%);
+    transition: 250ms $timer-fuction;
+  }
+  &__title:focus ~ .modal-tel__icon {
+    fill: $accent-color;
+  }
+  &__title:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
 }
-.name_user_box:focus ~ .icons_user {
-  fill: $accent-color;
+.modal-mail {
+  &__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $second-text-color;
+  }
+  &__title {
+    width: 448px;
+    height: 40px;
+    border: 1px solid $modal-border;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 42px;
+    transition: 250ms $timer-fuction;
+  }
+  &__title:focus ~ .modal-mail__icon {
+    fill: $accent-color;
+  }
+  &__title:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+  &__icon {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    justify-content: center;
+    top: 50%;
+    left: 12px;
+    transform: translateY(15%);
+    transition: 250ms $timer-fuction;
+  }
 }
-.tel_user_box:focus ~ .icons_user {
-  fill: $accent-color;
-}
-.email_user_box:focus ~ .icons_user {
-  fill: $accent-color;
-}
-.name_user_box:focus {
-  border: 1px solid $accent-color;
-  outline: none;
-}
-.tel_user_box:focus {
-  border: 1px solid $accent-color;
-  outline: none;
-}
-.email_user_box:focus {
-  border: 1px solid $accent-color;
-  outline: none;
-}
-.coments_user_box:focus {
-  border: 1px solid $accent-color;
-  outline: none;
-}
-
-.tel_user_box {
-  width: 448px;
-  height: 40px;
-  border: 1px solid $modal-border;
-  border-radius: 4px;
-  margin-top: 4px;
-  padding-left: 42px;
-  transition: 250ms $timer-fuction;
-}
-.email_user_box {
-  width: 448px;
-  height: 40px;
-  border: 1px solid $modal-border;
-  border-radius: 4px;
-  margin-top: 4px;
-  padding-left: 42px;
-  transition: 250ms $timer-fuction;
-}
-.coments_user_box {
-  border: 1px solid $modal-border;
-  border-radius: 4px;
-  margin-top: 4px;
-  height: 120px;
-  padding-top: 12px;
-  padding-left: 16px;
-  transition: 250ms $timer-fuction;
-}
-.coments_user_box::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: $coments_color;
-}
-textarea {
-  resize: none;
-}
-.coments_block {
+.modal-coments {
   display: flex;
+  flex-direction: column;
+  &__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $second-text-color;
+  }
+  &__title:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+
+  &__title {
+    border: 1px solid $modal-border;
+    border-radius: 4px;
+    margin-top: 4px;
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: 250ms $timer-fuction;
+  }
+  &__title::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $coments_color;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    resize: none;
+  }
 }
-.label_name,
-.label_tel,
-.label_email,
-.label_coments {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: $second-text-color;
-}
-.name_box,
-.tel_box_modal,
-.mail_box_modal,
-.coments_box_modal {
+
+.modal-name,
+.modal-tel,
+.modal-mail,
+.modal-coments {
   margin-top: 10px;
   position: relative;
 }
-.coments_box_modal {
-  display: flex;
-  flex-direction: column;
-}
-.icons_user {
-  position: absolute;
-  height: 18px;
-  width: 18px;
-  display: inline-block;
-  justify-content: center;
-  top: 50%;
-  left: 12px;
-  transform: translateY(15%);
-  transition: 250ms $timer-fuction;
-}
+
 .button_send_form {
   text-align: center;
   background-color: $accent-color;
@@ -180,62 +229,62 @@ textarea {
   border: none;
   cursor: pointer;
 }
-.box_accept {
+.box-accept {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-}
-.text_accept {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: $second-text-color;
-}
-.checkbox_accept {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.text_accept::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 2px;
-  margin-right: 8.38px;
-  cursor: pointer;
-}
 
-.checkbox_accept:checked + .text_accept::before {
-  content: "";
-  background-color: $accent-color;
-  border-color: transparent;
-  background-image: url(../images/accept.svg);
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: 250ms $timer-fuction;
-  cursor: pointer;
-}
-.link_document {
-  color: $accent-color;
-  margin-left: 7px;
-  text-decoration: none;
-  position: relative;
-}
-.text_accept .link_document::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: $accent-color;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  transform: translateY(-5px);
+  &__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $second-text-color;
+  }
+  &__text::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-right: 8.38px;
+    cursor: pointer;
+  }
+  &__checkbox:checked + .box-accept__text::before {
+    content: "";
+    background-color: $accent-color;
+    border-color: transparent;
+    background-image: url(../images/accept.svg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 250ms $timer-fuction;
+    cursor: pointer;
+  }
+  &__text .box-accept__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $accent-color;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateY(-5px);
+  }
+  &__link {
+    color: $accent-color;
+    margin-left: 7px;
+    text-decoration: none;
+    position: relative;
+  }
 }
