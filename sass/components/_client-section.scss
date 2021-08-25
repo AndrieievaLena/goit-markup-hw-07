@@ -23,14 +23,6 @@
   padding: 0;
   margin: 0;
 }
-&__icon {
-  display: flex;
-  justify-content: center;
-  fill: $logo-company;
-  width: 100px;
-  height: 60px;
-  transition: 250ms $timer-fuction;
-}
 
 .client-content {
   display: flex;
@@ -42,19 +34,27 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: 250ms $timer-fuction;
-}
-.client-content:hover {
-  border: 1px solid $accent-color;
-}
-.client-content:hover &__icon {
-  fill: $accent-color;
-}
-.client-content:focus-within {
-  border: 1px solid $accent-color;
-}
-.client-content:focus-within &__icon {
-  fill: $accent-color;
-}
-.client-content:not(:last-child) {
-  margin-right: 30px;
+  &__icon {
+    display: flex;
+    justify-content: center;
+    fill: $logo-company;
+    width: 100px;
+    height: 60px;
+    transition: 250ms $timer-fuction;
+  }
+  .client-content:hover {
+    border: 1px solid $accent-color;
+  }
+  .client-content:hover &__icon {
+    fill: $accent-color;
+  }
+  .client-content:focus-within {
+    border: 1px solid $accent-color;
+  }
+  .client-content:focus-within &__icon {
+    fill: $accent-color;
+  }
+  .client-content:not(:last-child) {
+    margin-right: 30px;
+  }
 }

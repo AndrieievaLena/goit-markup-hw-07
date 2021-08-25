@@ -11,38 +11,40 @@
 .feature-list .list + .list {
   margin-left: 30px;
 }
-.list__position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  background-color: $icon-background;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-}
-.list__icon {
-  width: 70px;
-  height: 75px;
-}
+list {
+  .list__position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: $icon-background;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+  }
+  .list__icon {
+    width: 70px;
+    height: 75px;
+  }
 
-.list__title {
-  color: $title-text-color;
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
+  .list__title {
+    color: $title-text-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
 
-.list__description {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: $second-text-color;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  max-width: 270px;
+  .list__description {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $second-text-color;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    max-width: 270px;
+  }
 }

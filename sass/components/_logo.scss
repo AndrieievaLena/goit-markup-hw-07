@@ -1,17 +1,19 @@
-&__logo {
-  color: $logo-color;
-  display: block;
-  font-family: "raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  margin-right: 94px;
-  padding-top: 30px;
-  padding-bottom: 19px;
-  text-decoration: none;
-}
+label-box {
+  &__logo {
+    color: $logo-color;
+    display: block;
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-right: 94px;
+    padding-top: 30px;
+    padding-bottom: 19px;
+    text-decoration: none;
+  }
 
-&__part-logo {
-  color: $accent-color;
+  &__part-logo {
+    color: $accent-color;
+  }
 }

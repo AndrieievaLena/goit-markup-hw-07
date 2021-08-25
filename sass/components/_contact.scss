@@ -6,61 +6,64 @@
 
 .mail-title {
   margin-right: 30px;
-}
-&__link {
-  display: inline-flex;
-  align-items: center;
-  color: $second-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: 250ms $timer-fuction;
-}
-&__icon {
-  fill: $second-text-color;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  transition: 250ms $timer-fuction;
-}
-&__link:hover,
-&__link:focus {
-  color: $accent-color;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    color: $second-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: 250ms $timer-fuction;
+  }
+  &__icon {
+    fill: $second-text-color;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: 250ms $timer-fuction;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__link:hover .mail-title__icon,
+  &__link:focus .mail-title__icon {
+    color: $accent-color;
+  }
 }
 .tell-title {
   display: inline-flex;
-}
 
-&__link {
-  display: inline-flex;
-  align-items: flex-end;
-  color: $second-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: 250ms $timer-fuction;
-}
+  &__link {
+    display: inline-flex;
+    align-items: flex-end;
+    color: $second-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: 250ms $timer-fuction;
+  }
 
-&__icon {
-  fill: $second-text-color;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  transition: 250ms $timer-fuction;
-}
+  &__icon {
+    fill: $second-text-color;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    transition: 250ms $timer-fuction;
+  }
 
-&__link:hover,
-&__link:focus {
-  color: $accent-color;
-}
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
 
-&__link:hover &__icon,
-&__link:focus &__icon,
-&__link:hover &__icon,
-&__link:focus &__icon {
-  fill: $accent-color;
+  &__link:hover .tell-title__icon,
+  &__link:focus .tell-title__icon {
+    fill: $accent-color;
+  }
 }

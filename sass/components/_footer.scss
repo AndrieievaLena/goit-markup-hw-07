@@ -23,25 +23,26 @@
 .contact-footer {
   padding: 0px;
   margin: 0;
-}
-.contact-footer .contact-footer__link:not(:last-child) {
-  margin-bottom: 9px;
-}
-.contact-footer .contact-footer__list:not(:last-child) {
-  margin-bottom: 9px;
-}
-.contact-footer .contact-footer__link {
-  color: $footer-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  transition: 250ms $timer-fuction;
-}
-.contact-footer .contact-footer__link:hover,
-.contact-footer.contact-footer__link:focus {
-  color: $accent-color;
+
+  .contact-footer &__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .contact-footer &__list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .contact-footer &__link {
+    color: $footer-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: 250ms $timer-fuction;
+  }
+  .contact-footer &__link:hover,
+  .contact-footer &__link:focus {
+    color: $accent-color;
+  }
 }
 
 .footer-block {
@@ -53,45 +54,46 @@
   display: flex;
   flex-direction: column;
   margin-left: 70px;
-}
-.footer-box__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $primary-text-color;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-.footer-box .footer-box__social:not(:last-child) {
-  margin-right: 10px;
-}
-.footer-box__link {
-  display: flex;
-}
 
-.footer-box__social {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: $footer-link-color;
-  justify-content: center;
-  align-items: center;
-  transition: 250ms $timer-fuction;
-}
-.footer-box__social svg {
-  width: 20px;
-  height: 20px;
-}
-.footer-box__social:hover,
-.footer-box__social:focus {
-  background-color: $accent-color;
-  color: $white-color;
-}
-.footer-box__icon {
-  fill: $white-color;
-  width: 20px;
-  height: 20px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .footer-box &__social:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+  }
+
+  &__social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $footer-link-color;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms $timer-fuction;
+  }
+  &__social svg {
+    width: 20px;
+    height: 20px;
+  }
+  &__social:hover,
+  &__social:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+  &__icon {
+    fill: $white-color;
+    width: 20px;
+    height: 20px;
+  }
 }

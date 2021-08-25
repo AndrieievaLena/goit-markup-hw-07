@@ -22,37 +22,36 @@
   justify-content: center;
   text-align: center;
 }
-.team-list > .team-list__detalis {
-  box-shadow: $shadow;
-}
+
 .team-list {
   padding: 0px;
-}
-.team-list,
-.team-list__description {
-  margin: 0px;
-}
-.team-list__detalis {
-  background-color: $white-color;
-}
-.team-list__detalis:not(:last-child) {
-  margin-right: 30px;
-}
-.team-list__name {
-  color: $title-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-}
-.team-list__name {
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-.team-list__work {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding-bottom: 0;
-  color: $second-text-color;
-  font-size: 16px;
+  .team-list &__detalis {
+    box-shadow: $shadow;
+  }
+  .team-list,
+  &__description {
+    margin: 0px;
+  }
+  &__detalis {
+    background-color: $white-color;
+  }
+  &__detalis:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  &__work {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    color: $second-text-color;
+    font-size: 16px;
+  }
 }
