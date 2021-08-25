@@ -3,12 +3,12 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
-.block-form {
+&__block {
   display: flex;
   flex-direction: column;
   margin-left: 93px;
 }
-.name_form {
+&__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -19,7 +19,7 @@
 .invite-box {
   display: flex;
 }
-.invite_button {
+&_button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,13 +36,13 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.button_footer_svg {
+&__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
 
-.invite-form {
+&__form {
   display: flex;
   align-items: center;
   justify-content: center;

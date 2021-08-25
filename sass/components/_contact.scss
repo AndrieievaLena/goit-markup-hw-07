@@ -7,7 +7,7 @@
 .mail-title {
   margin-right: 30px;
 }
-.mail-title__link {
+&__link {
   display: inline-flex;
   align-items: center;
   color: $second-text-color;
@@ -18,22 +18,22 @@
   text-decoration: none;
   transition: 250ms $timer-fuction;
 }
-.mail-title__icon {
+&__icon {
   fill: $second-text-color;
   width: 16px;
   height: 12px;
   margin-right: 10px;
   transition: 250ms $timer-fuction;
 }
-.mail-title__link:hover,
-.mail-title__link:focus {
+&__link:hover,
+&__link:focus {
   color: $accent-color;
 }
 .tell-title {
   display: inline-flex;
 }
 
-.tel-title__link {
+&__link {
   display: inline-flex;
   align-items: flex-end;
   color: $second-text-color;
@@ -45,7 +45,7 @@
   transition: 250ms $timer-fuction;
 }
 
-.tel-title__icon {
+&__icon {
   fill: $second-text-color;
   width: 10px;
   height: 16px;
@@ -53,14 +53,14 @@
   transition: 250ms $timer-fuction;
 }
 
-.tel-title__link:hover,
-.tel-title__link:focus {
+&__link:hover,
+&__link:focus {
   color: $accent-color;
 }
 
-.mail-title__link:hover .mail-title__icon,
-.mail-title__link:focus .mail-title__icon,
-.tel-title__link:hover .tel-title__icon,
-.tel-title__link:focus .tel-title__icon {
+&__link:hover &__icon,
+&__link:focus &__icon,
+&__link:hover &__icon,
+&__link:focus &__icon {
   fill: $accent-color;
 }

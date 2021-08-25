@@ -1,4 +1,4 @@
-.label-box__logo {
+&__logo {
   color: $logo-color;
   display: block;
   font-family: "raleway", sans-serif;
@@ -12,6 +12,6 @@
   text-decoration: none;
 }
 
-.label-box__part-logo {
+&__part-logo {
   color: $accent-color;
 }

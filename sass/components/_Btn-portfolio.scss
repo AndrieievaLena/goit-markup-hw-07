@@ -10,10 +10,10 @@
   padding: 0px;
 }
 
-.button-type .button-type__list + .button-type__list {
+.button-type &__list + &__list {
   margin-left: 8px;
 }
-.button-type .button-type__link {
+.button-type &__link {
   background-color: $box-button;
   color: $title-text-color;
   border: none;
@@ -27,8 +27,8 @@
   padding: 6px 22px;
   transition: 250ms $timer-fuction;
 }
-.button-type .button-type__link:hover,
-.button-type .button-type__link:focus {
+.button-type &__link:hover,
+.button-type &__link:focus {
   background-color: $accent-color;
   color: $white-color;
   box-shadow: $shadow-button;
